@@ -1,0 +1,188 @@
+html, body {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+#images {
+    float: left;
+  }
+
+#title{
+    color: white;
+    font-weight: bold;
+}
+
+#text{
+    float: left;
+    padding: 15px 20px;
+}
+
+
+#head{
+    background: rgb(0,33,87);
+    height: 70px;
+}
+
+.card-content{
+    background: rgb(89,110,146);
+}
+
+#sidebar{
+    background: rgb(204,204,204); 
+    position:fixed;
+}
+
+#textinput1{
+    float: left;
+    margin-left: 30px;
+    height: 35px;
+    border: none;
+}
+
+#textinput2{
+    margin-left: 10px;
+    float: left;
+    height: 35px;
+    border: none;
+}
+
+.dropdown{
+    color: white;
+}
+
+#dropdownMenuButton {
+    background-color: white;
+    height: 35px;
+}
+
+#dropp{
+    width: 180px;
+    margin-left: 30px;
+}
+
+#reset-button{
+    border-radius: 10px;
+    background-color: rgb(144,144,144);
+    margin-top: 180px;
+    margin-left: 50px;
+    height: 40px;
+    width: 150px;
+    
+}
+
+#category{
+    margin-left: 30px;
+    color: rgb(118,115,115);
+}
+
+#res_txt{
+    color: rgb(245,245,245);
+    margin-top: 9px;
+}
+
+#makemeblue{
+    background-color: rgb(89,110,146);
+    margin-top: 0px;
+    margin-block-end: auto;
+    height:90px;
+    width: 83%;
+    float: right;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+#box_labels_upper{
+    color: whitesmoke;
+    text-align: center;
+}
+
+#box_labels_lower{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.success{
+    text-align: center;
+    font-weight: bold;
+}
+
+#card-body{
+    border: none; 
+}
+.second {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#stats{
+    justify-content: space-between;
+    width:15%;
+    margin-top: 20px;
+}
+
+#footer{
+   position:fixed;
+   bottom:0;
+   height: 30px;
+   width:82%;
+}
+
+#fixme{
+    position: fixed;
+    left: 300px; 
+    top:190px;
+}
+
+#fixme2{
+    position: fixed;
+    right: 0px; 
+    top:190px;
+}
+#makebold{
+    font-weight: bold;;
+}
+
+.gridgraph {
+    display: grid;
+    grid-template-columns: repeat(9, 60px);
+    grid-template-rows: repeat(13, 1fr);
+    }
+
+.box1 {
+    background-color: rgb(147,193,169);
+    grid-column: 1/span 4;
+    grid-row: 1/span 10;
+}
+
+.box2 {
+    background-color: rgb(246,240,177);
+    grid-column: 5/span 3;
+    grid-row: 1/span 10;
+}
+
+.box3 {
+    background-color:rgb(171,213,116);
+    grid-column: 1/span 3;
+    grid-row: 10/span 3;
+}
+
+.box4 {
+    background-color:rgb(211,230,182);
+
+    grid-column: 4/span 3;
+    grid-row: 10/span ;
+}
+
+.box5 {
+    background-color:rgb(153,211,174);
+    grid-column: 7/span 1;
+    grid-row: 10/span 2;
+}
+
+
