@@ -151,7 +151,7 @@ html, body {
 .gridgraph {
     display: grid;
     grid-template-columns: repeat(9, 60px);
-    grid-template-rows: repeat(13, 1fr);
+    grid-template-rows: repeat(14, 1fr);
     }
 
 .box1 {
@@ -169,14 +169,14 @@ html, body {
 .box3 {
     background-color:rgb(171,213,116);
     grid-column: 1/span 3;
-    grid-row: 10/span 3;
+    grid-row: 11/span 3;
 }
 
 .box4 {
     background-color:rgb(211,230,182);
 
     grid-column: 4/span 3;
-    grid-row: 10/span ;
+    grid-row: 11/span 3;
 }
 
 .box5 {
