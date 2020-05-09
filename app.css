@@ -68,6 +68,7 @@
 #viewall{
     border-radius: 10px;
     background-color: rgb(173,173,173);
+    margin-top: 0px;
     margin-right: 50px;
     height: 30px;
     width: 100px;
@@ -155,7 +156,9 @@
     display: grid;
     grid-template-columns: repeat(8, 50px);
     grid-template-rows: repeat(13, 1fr);
-    height: 230px;
+    height: 290px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     }
 
 .box1 {
