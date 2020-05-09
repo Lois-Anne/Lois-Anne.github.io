@@ -156,7 +156,7 @@
     display: grid;
     grid-template-columns: repeat(8, 50px);
     grid-template-rows: repeat(13, 1fr);
-    height: 290px;
+    height: 320px;
     margin-bottom: 0px;
     padding-bottom: 0px;
     }
