@@ -158,107 +158,142 @@
 
         <!--Graphs/Main Content-->
         <div id="scroll">
-            <div id= "fixme">
-                <div>
-                    <h3 id="makebold">SIGN UPS</h3>
-                    <br>
-                    <div class="linegraph5">
-                        <div id = "container" style = "width: 550px; height: 160px; margin: 0 auto">
-                        </div>
-                        <script language = "JavaScript">
-                           function drawChart() {
-                              // Define the chart to be drawn.
-                              var data = new google.visualization.DataTable();
-                              data.addColumn('string', 'Period');
-                              data.addColumn('number', 'Number of Sign Ups');
-                          
-                              data.addRows([
-                                 ["",6.0],
-                                 ["",6.5],
-                                 ["",6.25],
-                                 ["",9.0],
-                                 ["",7.5],
-                                 ["",8.0],
-                                 ["",7.5],
-                                 ["",9.0],
-                                 ["",8.75]
-                              ]);
-                              
-                              // Set chart options
-                              var options = {
-                                 chart: { 
-                                    title: '',
-                                    subtitle: ''
-                                 },   
-                                 hAxis: {
-                                    title: '',         
-                                 },
-                                 vAxis: {
-                                    title: '',        
-                                 }, 
-                                 colors: ['#2e3192'],
-                                 'width':715,
-                                 'height':160      
-                              };
-                  
-                              // Instantiate and draw the chart.
-                              var chart = new google.charts.Line(document.getElementById('container'));
-                              chart.draw(data, options);
-                           }
-                           google.charts.setOnLoadCallback(drawChart);
-                        </script>
-    
+            <div class = "inner">
+                <div id= "fixme">
+                    <div>
+                        <h3 id="makebold">SIGN UPS</h3>
                         <br>
-    
-                        <h3 id="makebold">CLASS DETAILS</h3>
-                        <div id="background">
-                            <div class="card-body row" id="classcard">
-                                <div class="col-sm" id="detail">
-                                    <span><h6 class="card1">SCHEDULED</h6></span>
-                                    <div class="card-bottom">40</div>
-                                </div>
-                                <div class="col-sm" id="detail">
-                                    <span><h6 class="card2">HELD</h6></span>
-                                    <div class="card-bottom">37</div>
-                                </div>
-                                <div class="col-sm" id="detail">
-                                    <span><h6 class="card3">CANCELLED</h6></span>
-                                    <div class="card-bottom">3</div>
-                                </div>
+                        <div class="linegraph5">
+                            <div id = "container" style = "width: 550px; height: 160px; margin: 0 auto">
                             </div>
-    
-                        </div>
-    
-                    </div>
-    
-                </div>
-            
-            </div>
-    
-            <div id = "fixme2">
-                <div>
-                    <h3 id="makebold">TOP SCHOOL/PARISH</h3>
-                    <br>
-                    <div class="gridgraph">
-                        <div class="box1"> &nbsp;&nbsp;School A</div>
-                        <div class="box2"> &nbsp;&nbsp;School B</div>
-                        <div class="box3"> &nbsp;&nbsp;School C</div>
-                        <div class="box4"> &nbsp;&nbsp;School D</div>
-                        <div class="box5"></div>
-                    </div>
+                            <script language = "JavaScript">
+                            function drawChart() {
+                                // Define the chart to be drawn.
+                                var data = new google.visualization.DataTable();
+                                data.addColumn('string', 'Period');
+                                data.addColumn('number', 'Number of Sign Ups');
+                            
+                                data.addRows([
+                                    ["",6.0],
+                                    ["",6.5],
+                                    ["",6.25],
+                                    ["",9.0],
+                                    ["",7.5],
+                                    ["",8.0],
+                                    ["",7.5],
+                                    ["",9.0],
+                                    ["",8.75]
+                                ]);
+                                
+                                // Set chart options
+                                var options = {
+                                    chart: { 
+                                        title: '',
+                                        subtitle: ''
+                                    },   
+                                    hAxis: {
+                                        title: '',         
+                                    },
+                                    vAxis: {
+                                        title: '',        
+                                    }, 
+                                    colors: ['#2e3192'],
+                                    'width':715,
+                                    'height':160      
+                                };
                     
+                                // Instantiate and draw the chart.
+                                var chart = new google.charts.Line(document.getElementById('container'));
+                                chart.draw(data, options);
+                            }
+                            google.charts.setOnLoadCallback(drawChart);
+                            </script>
+        
+                            <br>
+        
+                            <h3 id="makebold">CLASS DETAILS</h3>
+                            <div id="background">
+                                <div class="card-body row" id="classcard">
+                                    <div class="col-sm" id="detail">
+                                        <span><h6 class="card1">SCHEDULED</h6></span>
+                                        <div class="card-bottom"><h3>40</h3></div>
+                                    </div>
+                                    <div class="col-sm" id="detail">
+                                        <span><h6 class="card2">HELD</h6></span>
+                                        <div class="card-bottom"><h3>37</h3></div>
+                                    </div>
+                                    <div class="col-sm" id="detail">
+                                        <span><h6 class="card3">CANCELLED</h6></span>
+                                        <div class="card-bottom"><h3>3</h3></div>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                        </div>
+        
+                    </div>
+                
                 </div>
-            <button type="button" id="viewall"><p id= res_txt>View All</p></button>
-            </div>
-            <br><br><br><br><br><br><br><br><br><br>
-            <h1>TESTING</h1>
+        
+                <div id = "fixme2">
+                    <div>
+                        <h3 id="makebold">TOP SCHOOL/PARISH</h3>
+                        <br>
+                        <div class="gridgraph">
+                            <div class="box1"> &nbsp;&nbsp;School A</div>
+                            <div class="box2"> &nbsp;&nbsp;School B</div>
+                            <div class="box3"> &nbsp;&nbsp;School C</div>
+                            <div class="box4"> &nbsp;&nbsp;School D</div>
+                            <div class="box5"></div>
+                        </div>
+                        <button type="button" id="viewall"><p id= res_txt>View All</p></button>
+                    </div>
+                </div>
+                <br>
+                <div id= "fixme3">
+                    <br>
+                    <h3 id="background2"><b>WEBSITE ACTIVITY</b></h3>
+                    <div id="websiterow">
+                        <div class="flex container" id="website-activity" >
+                            <div id="website-activity" class="col-sm">
+                                <h6>Users</h6>
+                                <h3 id="makebold">38,358</h3>
+                            </div>
+                            <div id="website-activity" class="col-sm">
+                                <h6>New Users</h6>
+                                <h3 id="makebold">32,700</h3>
+                            </div>
+                            <div id="website-activity" class="col-sm">
+                                <h6>No. of Sessions per User</h6>
+                                <h3 id="makebold">2.02</h3>
+                            </div>
+                            <div id="website-activity" class="col-sm">
+                                <h6>Pages/Session</h6>
+                                <h3 id="makebold">6.90</h3>
+                            </div>
+                            <div id="website-activity" class="col-sm">
+                                <h6>Avg. Duration per Session</h6>
+                                <h3 id="makebold">00:08:43</h3>
+                            </div>
+                            <div id="website-activity" class="col-sm">
+                                <h6>Bounce Rate</h6>
+                                <h3 id="makebold">34.99%</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        test
+                    </div>
+                </div>
+            <div>
         </div>
         
 
         <!--Footer-->
         <footer class="footer footer-static footer-light navbar-border navbar-shadow" id="footer">
             <p class="clearfix black lighten-2 text-sm-center mb-0 px-2">
-                <span class="float-md-right">Last refreshed: May 8, 2020</span>
+                <span class="float-md-right">Last refreshed: May 9, 2020</span>
             </p>
         </footer>
 

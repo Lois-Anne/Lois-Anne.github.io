@@ -57,7 +57,7 @@
 
 #reset-button{
     border-radius: 10px;
-    background-color: rgb(144,144,144);
+    background-color: rgb(125,125,125);
     margin-top: 180px;
     margin-left: 50px;
     height: 40px;
@@ -131,14 +131,17 @@
 }
 
 #footer{
-   position:fixed;
+   position: absolute;
    bottom:0;
    height: 30px;
    width:82%;
 }
 .scroll{
-    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
+
 #fixme{
     position: fixed;
     left: 300px; 
@@ -150,8 +153,13 @@
     right: 0px; 
     top:190px;
 }
+#fixme3{
+    position: fixed;
+    left: 300px; 
+    top:580px;
+}
 #makebold{
-    font-weight: bold;;
+    font-weight: bold;
 }
 
 .gridgraph {
@@ -246,6 +254,12 @@
     background-color: rgb(237,237,237);
     width: 130%;
 }
+#background2{
+    background-color: rgb(237,237,237);
+    width: 150vh;
+    height: 50px;
+    margin-bottom: 0px;
+}
 .card1{
     background-color: rgb(245,217,107); 
     text-align: center; 
@@ -274,3 +288,19 @@
     height: 40px;
     font-weight: bold;
 }
+
+#websiteactivity{
+    background-color: rgb(224, 224, 224);
+    height: 40px;
+    border-left: 1px solid rgb(168,168,168);
+    border-right: 1px solid rgb(168,168,168);
+    padding-top: 5px;
+
+}
+
+.flex {
+    display: flex;
+    background-color: #D6DDD5;
+    padding: 10px;
+}
+        
