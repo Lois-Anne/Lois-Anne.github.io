@@ -246,6 +246,7 @@
                             <div class="box3"> &nbsp;&nbsp;School C</div>
                             <div class="box4"> &nbsp;&nbsp;School D</div>
                             <div class="box5"></div>
+                            
                         </div>
                         <button type="button" id="viewall"><p id= res_txt>View All</p></button>
                     </div>
@@ -282,49 +283,18 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <script language = "JavaScript">
-                            function drawChart() {
-                                // Define the chart to be drawn.
-                                var data = new google.visualization.DataTable();
-                                data.addColumn('string', 'Period');
-                                data.addColumn('number', 'Number of Sign Ups');
-                            
-                                data.addRows([
-                                    ["",6.0],
-                                    ["",6.5],
-                                    ["",6.25],
-                                    ["",9.0],
-                                    ["",7.5],
-                                    ["",8.0],
-                                    ["",7.5],
-                                    ["",9.0],
-                                    ["",8.75]
-                                ]);
-                                
-                                // Set chart options
-                                var options = {
-                                    chart: { 
-                                        title: '',
-                                        subtitle: ''
-                                    },   
-                                    hAxis: {
-                                        title: '',         
-                                    },
-                                    vAxis: {
-                                        title: '',        
-                                    }, 
-                                    colors: ['#2e3192'],
-                                    'width':715,
-                                    'height':160      
-                                };
-                    
-                                // Instantiate and draw the chart.
-                                var chart = new google.charts.Line(document.getElementById('container'));
-                                chart.draw(data, options);
-                            }
-                            google.charts.setOnLoadCallback(drawChart);
-                            </script>
+                    <div id = background3>
+                        <div>
+                            <div id="con" class="container card">
+                                <p style="color: black;"><b>Site Visit to Sign-up Conversion</b></hp>
+                                <h2 style="color: rgb(191,36,25);"><b>25%</b> <sup>!</sup></h2>
+                            </div>
+                            <br>
+                            <div id="traf" class="container card">
+                                <h2 class="success">40%</h2>
+                                <p><span style="color: black;">Increase/Decrease in Traffic</span><br> when compared to Period X</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             <div>
