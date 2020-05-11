@@ -82,7 +82,7 @@
         <div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow"  id = "sidebar">
             
                 <div>
-                    <form class="form">
+                    <form class="form" style="position: relative;">
                         <div class="form-body">
                             <br>
                             <h5 style="margin-right: 30px; border-color:rgb(194,193,193);" class="form-section" id= "category"> Select details: </h5>
@@ -157,7 +157,7 @@
         </div>
 
         <!--Graphs/Main Content-->
-        <div id="scroll">
+        <div>
             <div class = "inner">
                 <div id= "fixme">
                     <div>
@@ -254,36 +254,77 @@
                 <div id= "fixme3">
                     <br>
                     <h3 id="background2"><b>WEBSITE ACTIVITY</b></h3>
-                    <div id="websiterow">
-                        <div class="flex container" id="website-activity" >
-                            <div id="website-activity" class="col-sm">
-                                <h6>Users</h6>
-                                <h3 id="makebold">38,358</h3>
+                    <div>
+                        <div class="flex" id="stats2" >
+                            <div id="stats2" class="col-sm">
+                                <h6>&nbsp;&nbsp;&nbsp;Users</h6>
+                                <h3 id="makebold">&nbsp;&nbsp;38,358</h3>
                             </div>
-                            <div id="website-activity" class="col-sm">
-                                <h6>New Users</h6>
-                                <h3 id="makebold">32,700</h3>
+                            <div id="stats2" class="col-sm">
+                                <h6>&nbsp;&nbsp;&nbsp;New Users</h6>
+                                <h3 id="makebold">&nbsp;&nbsp;32,700</h3>
                             </div>
-                            <div id="website-activity" class="col-sm">
-                                <h6>No. of Sessions per User</h6>
-                                <h3 id="makebold">2.02</h3>
+                            <div id="stats2" class="col-sm">
+                                <h6>&nbsp;&nbsp;&nbsp;No. of Sessions per User</h6>
+                                <h3 id="makebold">&nbsp;&nbsp;2.02</h3>
                             </div>
-                            <div id="website-activity" class="col-sm">
-                                <h6>Pages/Session</h6>
-                                <h3 id="makebold">6.90</h3>
+                            <div id="stats2" class="col-sm">
+                                <h6>&nbsp;&nbsp;&nbsp;Pages/Session</h6>
+                                <h3 id="makebold">&nbsp;&nbsp;6.90</h3>
                             </div>
-                            <div id="website-activity" class="col-sm">
-                                <h6>Avg. Duration per Session</h6>
-                                <h3 id="makebold">00:08:43</h3>
+                            <div id="stats2" class="col-sm">
+                                <h6>&nbsp;&nbsp;&nbsp;Avg. Duration per Session</h6>
+                                <h3 id="makebold">&nbsp;&nbsp;00:08:43</h3>
                             </div>
-                            <div id="website-activity" class="col-sm">
-                                <h6>Bounce Rate</h6>
-                                <h3 id="makebold">34.99%</h3>
+                            <div id="stats2" class="col-sm">
+                                <h6>&nbsp;&nbsp;&nbsp;Bounce Rate</h6>
+                                <h3 id="makebold">&nbsp;&nbsp;34.99%</h3>
                             </div>
                         </div>
                     </div>
                     <div>
-                        test
+                        <script language = "JavaScript">
+                            function drawChart() {
+                                // Define the chart to be drawn.
+                                var data = new google.visualization.DataTable();
+                                data.addColumn('string', 'Period');
+                                data.addColumn('number', 'Number of Sign Ups');
+                            
+                                data.addRows([
+                                    ["",6.0],
+                                    ["",6.5],
+                                    ["",6.25],
+                                    ["",9.0],
+                                    ["",7.5],
+                                    ["",8.0],
+                                    ["",7.5],
+                                    ["",9.0],
+                                    ["",8.75]
+                                ]);
+                                
+                                // Set chart options
+                                var options = {
+                                    chart: { 
+                                        title: '',
+                                        subtitle: ''
+                                    },   
+                                    hAxis: {
+                                        title: '',         
+                                    },
+                                    vAxis: {
+                                        title: '',        
+                                    }, 
+                                    colors: ['#2e3192'],
+                                    'width':715,
+                                    'height':160      
+                                };
+                    
+                                // Instantiate and draw the chart.
+                                var chart = new google.charts.Line(document.getElementById('container'));
+                                chart.draw(data, options);
+                            }
+                            google.charts.setOnLoadCallback(drawChart);
+                            </script>
                     </div>
                 </div>
             <div>

@@ -92,7 +92,7 @@
     margin-top: 0px;
     margin-block-end: auto;
     height:90px;
-    width: 83%;
+    width: 81.955%;
     float: right;
     padding-left: 7%;
     padding-right: 7%;
@@ -120,8 +120,7 @@
 }
 .second {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
 
 #stats{
@@ -131,30 +130,25 @@
 }
 
 #footer{
-   position: absolute;
+   position: fixed;
    bottom:0;
    height: 30px;
    width:82%;
 }
-.scroll{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
 
 #fixme{
-    position: fixed;
+    position: absolute;
     left: 300px; 
     top:190px;
 }
 
 #fixme2{
-    position: fixed;
+    position: absolute;
     right: 0px; 
     top:190px;
 }
 #fixme3{
-    position: fixed;
+    position: absolute;
     left: 300px; 
     top:580px;
 }
@@ -256,7 +250,7 @@
 }
 #background2{
     background-color: rgb(237,237,237);
-    width: 150vh;
+    width: 135vh;
     height: 50px;
     margin-bottom: 0px;
 }
@@ -285,16 +279,19 @@
 .card-bottom{
     background-color: white;
     text-align: center; 
-    height: 40px;
+    height: 50px;
     font-weight: bold;
 }
 
-#websiteactivity{
+#stats2{
     background-color: rgb(224, 224, 224);
-    height: 40px;
+    height: 80px;
+    width: 135vh;
+    padding-left: 0px;
+    padding-right: 0px;
     border-left: 1px solid rgb(168,168,168);
     border-right: 1px solid rgb(168,168,168);
-    padding-top: 5px;
+    padding-top: 0px;
 
 }
 
@@ -302,5 +299,12 @@
     display: flex;
     background-color: #D6DDD5;
     padding: 10px;
+}
+
+.sidecards{
+    background-color: white;
+    text-align: center; 
+    height: 40px;
+    font-weight: bold;
 }
         
